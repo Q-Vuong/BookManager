@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingVertical="20dp"
+    android:paddingHorizontal="20dp"
+    android:background="@drawable/custom_item_recycler_view">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sách: "
+        android:layout_gravity="start"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="20dp"/>
+    <EditText
+        android:id="@+id/edt_bookname"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="Tôi tài giỏi bạn cũng thế"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tác giả: "
+        android:layout_gravity="start"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="20dp"/>
+    <EditText
+        android:id="@+id/edt_author"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="Jack Canfield and D. D. Watkins"
+        android:textStyle="italic"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Số lượng: "
+        android:layout_gravity="start"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="20dp"/>
+
+    <EditText
+        android:id="@+id/edt_quantity"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="11/07/2023"
+        android:textStyle="italic"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Giá bán: "
+        android:layout_gravity="start"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="20dp"/>
+    <EditText
+        android:id="@+id/edt_price"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="50.000"
+        android:textStyle="italic"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="10dp">
+        <Button
+            android:id="@+id/btn_updete"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="Chỉnh sửa"
+            android:layout_marginRight="15dp"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:background="@drawable/custom_gradient_button_background"/>
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="Huỷ"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:background="@drawable/custom_gradient_button_background"/>
+    </LinearLayout>
+
+</LinearLayout>

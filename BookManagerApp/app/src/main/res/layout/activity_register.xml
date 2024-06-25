@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:background="@drawable/background">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingHorizontal="20dp"
+        android:gravity="center|top"
+        android:background="@drawable/effect_blur">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Register"
+            android:textAllCaps="false"
+            android:textColor="#4E4B4B"
+            android:textSize="40dp"
+            android:textStyle="bold"
+            android:background="@drawable/custom_curved_corners_img"
+            android:layout_marginTop="50dp" />
+
+        <EditText
+            android:id="@+id/edt_register_username"
+            android:layout_marginTop="100dp"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@drawable/custom_edit_text_top"
+            android:hint="User name"
+            android:drawablePadding="10dp"
+            android:padding="20dp"
+            android:drawableLeft="@drawable/ic_user"/>
+        <EditText
+            android:id="@+id/edt_register_password"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@drawable/custom_edit_text_middle"
+            android:hint="Password"
+            android:padding="20dp"
+            android:drawablePadding="10dp"
+            android:inputType="textPassword"
+            android:drawableLeft="@drawable/ic_password"/>
+        <EditText
+            android:id="@+id/edt_register_hoten"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@drawable/custom_edit_text_bottom"
+            android:hint="Full name"
+            android:drawablePadding="10dp"
+            android:padding="20dp"
+            android:drawableLeft="@drawable/ic_name"/>
+
+        <Button
+            android:id="@+id/btn_register"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@drawable/custom_gradient_button_background"
+            android:text="Register"
+            android:layout_marginTop="50dp"
+            android:textAllCaps="false"
+            android:textSize="20dp"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="______  Or continute with  ______"
+            android:layout_marginTop="50dp"
+            android:textColor="#4D3F3F"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="40dp"
+            android:gravity="center">
+            <ImageButton
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/logo_facebook"
+                android:scaleType="centerCrop"
+                android:background="?android:attr/selectableItemBackground"
+                android:layout_marginRight="80dp"/>
+            <ImageButton
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/logo_google"
+                android:scaleType="centerCrop"
+                android:background="?android:attr/selectableItemBackground" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="40dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Don’t have account?"
+                android:textColor="#000"/>
+            <Button
+                android:id="@+id/btn_go_to_login"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:background="@drawable/custom_button_nonbackground"
+                android:text="Login"
+                android:textAllCaps="false"
+                android:textColor="#215CF3"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
+
